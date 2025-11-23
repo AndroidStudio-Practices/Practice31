@@ -9,8 +9,25 @@
     <application>
         <service
             android:name=".NotificationService"
-            android:enabled="true"
-            android:exported="false" />
+            android:enabled="true"# 1. Инициализируем Git
+        git init
+
+        # 2. Проверяем статус
+        git status
+
+        # 3. Добавляем все файлы в staging area
+        git add .
+
+        # 4. Делаем первый коммит
+        git commit -m "Initial commit"
+
+        # 5. Добавляем remote репозиторий организации
+        git remote add origin https://github.com/AndroidStudio-Practices/Practice31.git
+
+        # 6. Пушим изменения
+        git push -u origin master
+
+        android:exported="false" />
 
         <activity
             android:name=".MainActivity"
